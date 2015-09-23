@@ -20,13 +20,14 @@ function showData() {
 	console.log('Data store is now: ', texts);
 }
 
-/*
+
 app.get('/texts/:id', function (req, res) {
     var id = req.params.id;
     console.log('Sending text #%s...',id);
     res.send({value : texts[id]});
 });
 
+/*
 app.put('/texts/:id', function (req, res) {
 	var id = req.params.id;
 	console.log('Receiving text #%s...',id);
@@ -35,6 +36,7 @@ app.put('/texts/:id', function (req, res) {
 	res.send({});
 });
 
+/*
 app.post('/texts', function (req, res) {
 	console.log('Receiving new text...');
 	var newid = texts.length;
@@ -44,6 +46,7 @@ app.post('/texts', function (req, res) {
 	res.send({id:newid});
 });
 
+/*
 app.get('/texts', function (req, res) {
 	console.log('Sending all texts...');
 	showData();
